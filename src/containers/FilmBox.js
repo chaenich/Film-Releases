@@ -7,6 +7,40 @@ class FilmBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      filmData:
+      [
+        {
+          id: 1,
+          name: "Dora and the Lost City of Gold",
+          url: "https://www.imdb.com/title/tt7547410/?ref_=rlm"
+        },
+        {
+          id: 2,
+          name: "Downton Abbey",
+          url: "https://www.imdb.com/title/tt6398184/?ref_=rlm"
+        },
+        {
+          id: 3,
+          name: "Rambo: Last Blood",
+          url: "https://www.imdb.com/title/tt1206885/?ref_=rlm"
+        },
+        {
+          id: 4,
+          name: "Zombieland: Double Tap",
+          url: "https://www.imdb.com/title/tt1560220/?ref_=rlm"
+        },
+        {
+          id: 5,
+          name: "The Addams Family",
+          url: "https://www.imdb.com/title/tt1620981/?ref_=rlm"
+        }
+      ],
+
+      upcomingData:
+      {
+        name: "View more upcoming releases > > >",
+        url: "https://www.imdb.com/calendar/?region=gb"
+      }
     }
   }
 
@@ -15,9 +49,9 @@ class FilmBox extends Component {
       <div className="film-box">
         <Separator />
         <h2>Main film box</h2>
-        <FilmList />
+        <FilmList filmData = { this.state.filmData }/>
         <Separator />
-        <Upcoming />
+        <Upcoming upcomingData = {this.state.upcomingData }/>
       </div>
     )
   }
