@@ -5,8 +5,8 @@ class Film extends Component {
 
     return (
       <div className="film">
-      <a href={ this.props.url }>
-          { this.props.name }</a>
+      <li><a href={ this.props.url }>
+          { this.props.name }</a></li>
       </div>
     )
   }

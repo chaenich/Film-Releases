@@ -38,7 +38,7 @@ class FilmBox extends Component {
 
       upcomingData:
       {
-        name: "View more upcoming releases > > >",
+        name: "View more upcoming releases > > > >",
         url: "https://www.imdb.com/calendar/?region=gb"
       }
     }
@@ -47,6 +47,7 @@ class FilmBox extends Component {
   render () {
     return(
       <div className="film-box">
+        <h3>Upcoming Film Releases for UK</h3>
         <Separator />
         <FilmList data = { this.state.filmData }/>
         <Separator />
