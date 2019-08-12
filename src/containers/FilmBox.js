@@ -48,8 +48,7 @@ class FilmBox extends Component {
     return(
       <div className="film-box">
         <Separator />
-        <h2>Main film box</h2>
-        <FilmList filmData = { this.state.filmData }/>
+        <FilmList data = { this.state.filmData }/>
         <Separator />
         <Upcoming upcomingData = {this.state.upcomingData }/>
       </div>
