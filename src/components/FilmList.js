@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Film from '../components/Film.js'
 
 class FilmList extends Component {
   render() {
     return (
-      <h3>Film List</h3>
+      <div className="film-list">
+        <h3>Film List</h3>
+        <Film />
+      </div>
     )
   }
 }
