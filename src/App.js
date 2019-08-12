@@ -4,7 +4,10 @@ import FilmBox from './containers/FilmBox'
 
 function App() {
   return (
-    <FilmBox />
+    <div>
+      <h2>Upcoming Film Releases for UK</h2><hr></hr>
+      <FilmBox />
+    </div>
   );
 }
 
