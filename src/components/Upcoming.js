@@ -4,7 +4,8 @@ class Upcoming extends Component {
   render() {
     return (
       <div className="Upcoming">
-        <h4>Coming Soon....</h4>
+      <a href={ this.props.upcomingData.url }>
+          { this.props.upcomingData.name }</a>
       </div>
     )
   }
