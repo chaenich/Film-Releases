@@ -7,6 +7,7 @@ function App() {
     <div>
       <h2>Upcoming Film Releases for UK</h2><hr></hr>
       <FilmBox />
+    <hr />
     </div>
   );
 }
