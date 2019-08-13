@@ -1,13 +1,11 @@
-.App {
-  font-family: arial;
-}
-
 .film-box {
   width: 345px;
   border-width: 1px;
   border-style: solid;
   border-color: black;
   margin: 10px;
+  font-family: Helvetica;
+  background-color: lightgrey;
 }
 
 .separator {
@@ -39,6 +37,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: #1C6EB0;
 }
 
 a:hover {
